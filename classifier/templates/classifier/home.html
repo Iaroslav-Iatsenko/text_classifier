@@ -1,0 +1,27 @@
+{% extends 'classifier/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">Submit Text for Classification</div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Classify</button>
+                </form>
+            </div>
+        </div>
+
+        {% if result %}
+        <div class="card mt-4">
+            <div class="card-header">Classification Result</div>
+            <div class="card-body">
+                <h3>Predicted Category: <span class="text-primary">{{ result }}</span></h3>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
