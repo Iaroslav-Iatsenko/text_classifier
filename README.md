@@ -1,6 +1,6 @@
 # Text Classification App
 
-This application helps companies allocate user requests to specific departments. It is designed to handle multilingual inputs, with a focus on Bulgarian as demonstrated in the sample data.
+This application helps companies allocate user requests to specific departments. It is designed to handle multilingual inputs.
 
 ## Problem Statement
 
